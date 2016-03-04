@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SUPER</title>
+    <script type="text/javascript" src="/vendors/angular.js"></script>
+    <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/heroController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/listingController.js"></script>
+
+</head>
+<body ng-app="myApp">
+    <div>
+        <h1>Super Hero Tracker</h1>
+        <header ng-include="'/views/templates/nav.html'"></header>
+        <main ng-view></main>
+    </div>
+
+</body>
+</html>

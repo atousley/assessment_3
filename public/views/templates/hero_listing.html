@@ -1,0 +1,18 @@
+<form>
+    <label>Primary Power:</label>
+    <select ng-model="primary_power" ng-options="power.power_name for power in powers">
+        <option  value="">-------Select-------</option>
+    </select>
+
+    <button ng-click="showHero()">Show Heroes with this power</button>
+</form>
+
+
+<div ng-repeat="hero in heroes">
+    <p>{{hero.alias}}</p>
+    <p>{{hero.first_name}}</p>
+    <p>{{hero.last_name}}</p>
+    <p>{{hero.city}}</p>
+    <p>{{hero.primary_power}}</p>
+    <button ng-click="delete(hero._id)">Delete</button>
+</div>
